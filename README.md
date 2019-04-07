@@ -53,6 +53,20 @@ To start off, make sure you have no existing changes in the cloned repo
 git status
 ```
 
+Now we are going to add an upstream repository. First list the current configured remote repositories.
+
+## screenshot goes here
+
+Next, add the repository which you forked from to your list of upstream repos:
+
+```
+git remote add upstream https://github.com/utsprogsoc/uts-progsoc-git-workshop-2.git
+```
+
+And now verify that the new upstream repository has been added to your list of remote repositories:
+
+## screenshot goes here
+
 Next, you will make changes to the index.html file using your favourite text editor. This file is an html document
 containing a basic html table with some content.
 
@@ -68,11 +82,11 @@ git push
 #### Creating the merge conflict
 
 After pushing your changes, and under the instruction of the the person running the workshop. You are going
-to pull changes from the source of the forked repo. To do this you will need to do the following:
+to synchronise changes from the source of the forked repo. To do this you will need to run the following commands:
 
 ```
 git fetch upstream
-git pull
+git merge upstream/master
 ```
 
 If done correctly this should create a merge conflict in index.html and you should see the following output:
