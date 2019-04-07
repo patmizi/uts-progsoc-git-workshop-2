@@ -90,3 +90,16 @@ git merge upstream/master
 ```
 
 If done correctly this should create a merge conflict in index.html and you should see the following output:
+
+![A merge conflict](./img/merge-conflict.png)
+
+To resolve the conflict you will need to open up your favourite text editor and open up index.html. You will
+notice the addition of some conflict markers denoted by `<<<<<<<`, `=======` and `>>>>>>>`
+
+Edit the file to resolve the conflict and commit your changes
+
+```
+git add .
+git commit -m 'Resolved merge conflict'
+git push
+```
