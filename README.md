@@ -55,7 +55,7 @@ git status
 
 Now we are going to add an upstream repository. First list the current configured remote repositories.
 
-## screenshot goes here
+![git remote with no upstream](./img/git-remote-1.png)
 
 Next, add the repository which you forked from to your list of upstream repos:
 
@@ -65,7 +65,7 @@ git remote add upstream https://github.com/utsprogsoc/uts-progsoc-git-workshop-2
 
 And now verify that the new upstream repository has been added to your list of remote repositories:
 
-## screenshot goes here
+![git remote with upstream](./img/git-remote-2.png)
 
 Next, you will make changes to the index.html file using your favourite text editor. This file is an html document
 containing a basic html table with some content.
